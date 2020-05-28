@@ -6,7 +6,7 @@ const bears = [
 ];
 
 const addBear = () => {
-  return console.log(bears);
+
 }
 
 export default { addBear };
