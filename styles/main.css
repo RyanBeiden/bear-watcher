@@ -10,6 +10,27 @@ h2 {
   color: #FFFFFF;
 }
 
+header {
+  background-color: #2962FF;
+  margin-bottom: 45px;
+}
+
+.logo {
+  width: 375px;
+  padding: 15px 50px;
+}
+
+.fa-github {
+  color: #FFFFFF;
+  font-size: 3em;
+  margin: 30px 50px 0px 0px;
+  transition: ease-in 200ms;
+}
+
+.fa-github:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .bear-form h2 {
   padding: 15px 0px 25px 0px;
 }
@@ -37,7 +58,7 @@ h2 {
 }
 
 .bear-form button:hover {
-  background-color: #e9e9e9;
+  background-color: rgba(255, 255, 255, 0.85);
   color: #2962FF;
 }
 
