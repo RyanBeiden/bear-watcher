@@ -15,10 +15,10 @@ const printForm = () => {
         <div class="d-flex justify-content-center">
           <div class="row">
             <div class="form-group col">
-              <input type="text" class="form-control" placeholder="Bear's Name">
+              <input type="text" class="form-control" placeholder="Bear's Name" id="bear-name">
             </div>
             <div class="form-group col">
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <input type="text" class="form-control" placeholder="Image URL" id="bear-image">
             </div>
           </div>
         </div>
