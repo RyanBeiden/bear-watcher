@@ -24,7 +24,7 @@ const printForm = () => {
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary" id="submit-bear">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit-bear">Track</button>
       </form>
     </div>
   `;

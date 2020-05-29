@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Muli&display=swap');
 
 body {
-  font-family: 'Caveat', cursive;
+  font-family: 'Muli', sans-serif;
 }
 
 h2 {
   font-size: 2.5em;
+  font-family: 'Caveat', cursive;
+  color: #FFFFFF;
 }
 
 .bear-form h2 {
@@ -23,12 +25,7 @@ h2 {
 
 .form-control {
   padding-right: 100px;
-  font-size: 1.5em;
-}
-
-.form-control-file {
-  font-size: 1.4em;
-  margin-left: 20px;
+  font-size: 1.2em;
 }
 
 .bear-form button {
@@ -56,4 +53,48 @@ h2 {
 .alert {
   font-size: 1em;
   font-family: Helvetica;
+}
+
+.empty-river {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.534);
+  background-color: #2962FF;
+  border: 2px solid #2962FF;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 50px;
+  font-size: 5em;
+}
+
+.river-header {
+  text-align: center;
+  background-color: #001A63;
+  padding: 25px;
+  margin-top: 50px;
+  border: 2px solid #001A63;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.river-section {
+  text-align: center;
+  color: #2962FF;
+  background-color: #2962FF;
+  border: 2px solid #2962FF;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 15px;
+}
+
+.river-section .card {
+  margin: 15px;
+}
+
+.river-section .card-body {
+  padding: 8px 0px 0px 0px;
+}
+
+.river-section .card-title {
+  font-size: 2.5em;
+  font-family: 'Caveat', cursive;
 }
