@@ -8,7 +8,7 @@ const printBears = () => {
       <h2>Brooks River</h2>
     </div>
       <div class="container river-section">
-        <div class="d-flex flex-wrap justify-content-center">
+        <div class="d-flex flex-wrap justify-content-center align-items-start">
   `;
   for (let i = 0; i < newBears.length; i++) {
     domString += `
