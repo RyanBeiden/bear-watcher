@@ -1,6 +1,11 @@
 import utils from '../helpers/utils.js';
-// import bearData from '../helpers/data/bearData.js';
+import bearData from '../helpers/data/bearData.js';
 // import river from './river.js'; // maybe?
+
+const newBearClickEvent = (e) => {
+  e.preventDefault();
+  bearData.addBear();
+}
 
 const printForm = () => {
   const domString = `
@@ -17,11 +22,12 @@ const printForm = () => {
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit-bear">Submit</button>
       </form>
     </div>
   `;
   utils.printToDom('#bear-form', domString);
+  document.querySelector('#submit-bear').addEventListener('click', newBearClickEvent);
 };
 
 export default { printForm };
