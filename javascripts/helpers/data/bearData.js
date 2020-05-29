@@ -14,7 +14,7 @@ const addBear = () => {
       </button>
     </div>
     `;
-  return utils.printToDom ('#noFieldAlert', domString);
+    return utils.printToDom ('#noFieldAlert', domString);
   } else {
       const nameValue = document.getElementById('bear-name').value;
       const imageValue = document.getElementById('bear-image').value;

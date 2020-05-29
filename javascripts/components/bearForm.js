@@ -1,6 +1,6 @@
 import utils from '../helpers/utils.js';
 import bearData from '../helpers/data/bearData.js';
-import river from '../components/river.js'; // maybe?
+import river from '../components/river.js';
 
 
 const newBearClickEvent = (e) => {
