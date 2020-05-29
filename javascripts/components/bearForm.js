@@ -1,10 +1,12 @@
 import utils from '../helpers/utils.js';
 import bearData from '../helpers/data/bearData.js';
-// import river from './river.js'; // maybe?
+import river from '../components/river.js'; // maybe?
+
 
 const newBearClickEvent = (e) => {
   e.preventDefault();
   bearData.addBear();
+  river.printBears();
 }
 
 const printForm = () => {

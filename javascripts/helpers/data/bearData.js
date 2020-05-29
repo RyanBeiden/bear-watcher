@@ -27,4 +27,8 @@ const addBear = () => {
   }
 }
 
-export default { addBear };
+const getBears = () => {
+  return bears;
+}
+
+export default { addBear, getBears };
