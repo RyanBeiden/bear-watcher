@@ -1,5 +1,4 @@
 import utils from '/javascripts/helpers/utils.js';
-import river from '/javascripts/components/river.js'; // maybe?
 
 const bears = [];
 
@@ -26,7 +25,6 @@ const addBear = () => {
       document.getElementById('bear-name').value = '';
       document.getElementById('bear-image').value = '';
   }
-  return river.printBears();
 }
 
 const getBears = () => {
