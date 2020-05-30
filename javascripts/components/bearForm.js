@@ -29,7 +29,7 @@ const printForm = () => {
     </div>
   `;
   utils.printToDom('#bear-form', domString);
-  document.querySelector('#submit-bear').addEventListener('click', newBearClickEvent);
+  $('#submit-bear').click(newBearClickEvent);
 };
 
 export default { printForm };
