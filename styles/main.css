@@ -85,6 +85,8 @@ header {
   border-bottom-right-radius: 3px;
   padding: 50px;
   font-size: 5em;
+  /* Temporary: */
+  margin-bottom: 50px;
 }
 
 .river-header {
@@ -108,15 +110,42 @@ header {
   margin-bottom: 50px;
 }
 
-.river-section .card {
+.card {
   margin: 15px;
 }
 
-.river-section .card-body {
-  padding: 8px 0px 0px 0px;
+.card-body {
+  padding: 5px 0px 0px 0px;
 }
 
-.river-section .card-title {
+.card-title {
   font-size: 2.5em;
   font-family: 'Caveat', cursive;
+}
+
+.fa-hands,
+.fa-fish {
+  color: #2962FF;
+  font-size: 3em !important;
+  padding: 10px;
+  margin: 0px 10px;
+  border: 2px solid #2962FF;
+  border-radius: .2em;
+  transition: ease-in 200ms;
+}
+
+.fa-hands:hover,
+.fa-fish:hover {
+  background-color: #2962FF;
+  color: #FFFFFF;
+}
+
+.line {
+  background-color: #2962FF;
+  padding: 1px;
+  margin: 0px 10px 5px 10px;
+}
+
+table {
+  color: #FFFFFF;
 }

@@ -16,15 +16,15 @@ const addBear = () => {
     `;
     return utils.printToDom ('#noFieldAlert', domString);
   } else {
-      const nameValue = $('#bear-name').val();
-      const imageValue = $('#bear-image').val();
       bears.push({
-        name: nameValue,
-        imageUrl: imageValue
+        name: $('#bear-name').val(),
+        imageUrl: $('#bear-image').val(),
+        id: utils.getId()
       });
       $('#bear-name').val('');
       $('#bear-image').val('');
   }
+  console.log(bears);
 }
 
 const getBears = () => {
