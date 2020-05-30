@@ -3,8 +3,8 @@ import utils from '/javascripts/helpers/utils.js';
 const bears = [];
 
 const addBear = () => {
-  const validateName = document.getElementById('bear-name').value;
-  const validateUrl = document.getElementById('bear-image').value;
+  const validateName = $('#bear-name').val();
+  const validateUrl = $('#bear-image').val();
   if (validateName === '' || validateUrl === '') {
     let domString = `
     <div class="alert alert-danger alert-dismissible fade show mt-4 mr-5 ml-5" role="alert">
@@ -16,14 +16,14 @@ const addBear = () => {
     `;
     return utils.printToDom ('#noFieldAlert', domString);
   } else {
-      const nameValue = document.getElementById('bear-name').value;
-      const imageValue = document.getElementById('bear-image').value;
+      const nameValue = $('#bear-name').val();
+      const imageValue = $('#bear-image').val();
       bears.push({
         name: nameValue,
         imageUrl: imageValue
       });
-      document.getElementById('bear-name').value = '';
-      document.getElementById('bear-image').value = '';
+      $('#bear-name').val('');
+      $('#bear-image').val('');
   }
 }
 
