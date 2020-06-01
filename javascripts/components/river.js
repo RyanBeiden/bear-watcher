@@ -1,8 +1,30 @@
 import bearData from '../helpers/data/bearData.js';
 import utils from '../helpers/utils.js';
-import table from './table.js';
 
 const newBears = bearData.getBears();
+
+let counterForCatch = 0;
+let counterForAttempt = 0;
+
+const catchEvent = (e) => {
+  newBears.forEach(bear => {
+    if (bear.id === e.target.id) {
+      counterForCatch++;
+      bear.catchCount = counterForCatch;
+      console.log(newBears);
+    }
+  });
+}
+
+const attemptEvent = (e) => {
+  newBears.forEach(bear => {
+    if (bear.id === e.target.id) {
+      counterForAttempt++;
+      bear.attemptCount = counterForAttempt;
+      console.log(newBears);
+    }
+  });
+}
 
 const printBears = () => {
   let domString = `
@@ -12,37 +34,29 @@ const printBears = () => {
     <div class="container river-section">
       <div class="d-flex flex-wrap justify-content-center align-items-start">
     `;
-  for (let i = 0; i < newBears.length; i++) {
+  newBears.forEach((bear) => {
     domString += `
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${newBears[i].imageUrl}" alt="photo of a bear named ${newBears[i].name}">
+        <img class="card-img-top" src="${bear.imageUrl}" alt="photo of a bear named ${bear.name}">
         <div class="card-body">
-          <h4 class="card-title">${newBears[i].name}</h4>
+          <h4 class="card-title">${bear.name}</h4>
         </div>
         <span class="line"></span>
         <div class="d-flex justify-content-center align-items-start mt-2 mb-2">
-          <a id="${newBears[i].id}"><i class="fas fa-hands"></i></a>
-          <a id="${newBears[i].name}"><i class="fas fa-fish" data-fa-transform="rotate-340"></i></a>
+          <button type="button" id="${bear.id}" class="attempt-button btn btn-primary">Attempt</button>
+          <button type="button" id="${bear.id}" class="catch-button btn btn-primary">Caught</button>
         </div>
       </div>
     `;
-  }
+  });
   domString += `
       </div>
     </div>
   `;
   utils.printToDom('#river', domString);
-  for (let i = 0; i < newBears.length; i++) {
-      $(`#${newBears[i].id}`).click(addData);
-    }
-  for (let i = 0; i < newBears.length; i++) {
-    $(`#${newBears[i].name}`).click(addData);
-  }
-}
 
-const addData = () => {
-  utils.getDate();
-  table.printTableData(newBears);
+  $('.catch-button').click(catchEvent);
+  $('.attempt-button').click(attemptEvent);
 }
 
 const printRiver = () => {

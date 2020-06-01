@@ -6,11 +6,12 @@ let id = 0;
 
 const getId = () => {
   id++;
-  return id;
+  const convertToString = id.toString();
+  return convertToString;
 }
 
 const getDate = () => {
-  console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+  moment().format('MMMM Do YYYY, h:mm:ss a');
 }
 
 export default { printToDom, getId, getDate };

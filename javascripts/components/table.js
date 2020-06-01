@@ -17,17 +17,16 @@ const printTableData = (bearIndex) => {
       </thead>
       <tbody>
     `;
-  for (let i = 0; i < bearIndex.length; i++) {
+    bearIndex.forEach((bear) => {
     domString += `
       <tr>
-        <th scope="row">${bearIndex[i].id}</th>
-        <td>${bearIndex[i].name}</td>
-        <td>Display getDate Function here</td>
-        <td>Display number of clicks here</td>
+        <th scope="row">${bear.id}</th>
+        <td>${bear.name}</td>
+        <td>${bear.attempts}</td>
+        <td>${bear.catches}</td>
       </tr>
     `;
-  }
-  console.log(bearIndex);
+  })
   domString += `
         </tbody>
       </table>
@@ -36,17 +35,4 @@ const printTableData = (bearIndex) => {
   utils.printToDom('#table', domString);
 }
 
-const printTableSection = () => {
-  let domString = `
-    <div class="river-header container">
-      <h2>Fish Tracker</h2>
-    </div>
-    <div class="container empty-river">
-      <i class="far fa-frown"></i>
-      <h4>No data yet...</h4>
-    </div>
-  `;
-  utils.printToDom('#table', domString);
-}
-
-export default { printTableSection, printTableData };
+export default { printTableData };
