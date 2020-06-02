@@ -123,23 +123,6 @@ header {
   font-family: 'Caveat', cursive;
 }
 
-.fa-hands,
-.fa-fish {
-  color: #2962FF;
-  font-size: 3em !important;
-  padding: 10px;
-  margin: 0px 10px;
-  border: 2px solid #2962FF;
-  border-radius: .2em;
-  transition: ease-in 200ms;
-}
-
-.fa-hands:hover,
-.fa-fish:hover {
-  background-color: #2962FF;
-  color: #FFFFFF;
-}
-
 .line {
   background-color: #2962FF;
   padding: 1px;
@@ -147,5 +130,24 @@ header {
 }
 
 table {
+  color: #FFFFFF;
+}
+
+.catch-button,
+.attempt-button {
+  border: none;
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  color: #2962FF;
+  font-size: 1em !important;
+  border: 2px solid #2962FF;
+  border-radius: .2em;
+  transition: ease-in 200ms;
+}
+
+.catch-button:hover,
+.attempt-button:hover {
+  background-color: #2962FF;
   color: #FFFFFF;
 }

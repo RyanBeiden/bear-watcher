@@ -1,6 +1,9 @@
 import utils from '../helpers/utils.js';
+import bearData from '../helpers/data/bearData.js';
 
-const printTableData = (bearIndex) => {
+const newBears = bearData.getBears();
+
+const printTableData = () => {
   let domString = `
     <div class="river-header container">
       <h2>Fish Tracker</h2>
@@ -11,23 +14,22 @@ const printTableData = (bearIndex) => {
         <tr>
           <th scope="col">#</th>
           <th scope="col">Bear's Name</th>
-          <th scope="col">Attempts</th>
+          <th scope="col">Catch Attempts</th>
           <th scope="col">Fish Caught</th>
         </tr>
       </thead>
       <tbody>
     `;
-  for (let i = 0; i < bearIndex.length; i++) {
+    newBears.forEach((bear) => {
     domString += `
       <tr>
-        <th scope="row">${bearIndex[i].id}</th>
-        <td>${bearIndex[i].name}</td>
-        <td>Display getDate Function here</td>
-        <td>Display number of clicks here</td>
+        <th scope="row">${bear.id}</th>
+        <td>${bear.name}</td>
+        <td>${bear.attemptCount}</td>
+        <td>${bear.catchCount}</td>
       </tr>
     `;
-  }
-  console.log(bearIndex);
+  })
   domString += `
         </tbody>
       </table>
@@ -36,17 +38,4 @@ const printTableData = (bearIndex) => {
   utils.printToDom('#table', domString);
 }
 
-const printTableSection = () => {
-  let domString = `
-    <div class="river-header container">
-      <h2>Fish Tracker</h2>
-    </div>
-    <div class="container empty-river">
-      <i class="far fa-frown"></i>
-      <h4>No data yet...</h4>
-    </div>
-  `;
-  utils.printToDom('#table', domString);
-}
-
-export default { printTableSection, printTableData };
+export default { printTableData };

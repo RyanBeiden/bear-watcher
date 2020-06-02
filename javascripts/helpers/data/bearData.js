@@ -19,12 +19,13 @@ const addBear = () => {
       bears.push({
         name: $('#bear-name').val(),
         imageUrl: $('#bear-image').val(),
-        id: utils.getId()
+        id: utils.getId(),
+        catchCount: 0,
+        attemptCount: 0
       });
       $('#bear-name').val('');
       $('#bear-image').val('');
   }
-  console.log(bears);
 }
 
 const getBears = () => {
