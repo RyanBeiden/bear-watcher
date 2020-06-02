@@ -1,6 +1,9 @@
 import utils from '../helpers/utils.js';
+import bearData from '../helpers/data/bearData.js';
 
-const printTableData = (bearIndex) => {
+const newBears = bearData.getBears();
+
+const printTableData = () => {
   let domString = `
     <div class="river-header container">
       <h2>Fish Tracker</h2>
@@ -11,19 +14,19 @@ const printTableData = (bearIndex) => {
         <tr>
           <th scope="col">#</th>
           <th scope="col">Bear's Name</th>
-          <th scope="col">Attempts</th>
+          <th scope="col">Catch Attempts</th>
           <th scope="col">Fish Caught</th>
         </tr>
       </thead>
       <tbody>
     `;
-    bearIndex.forEach((bear) => {
+    newBears.forEach((bear) => {
     domString += `
       <tr>
         <th scope="row">${bear.id}</th>
         <td>${bear.name}</td>
-        <td>${bear.attempts}</td>
-        <td>${bear.catches}</td>
+        <td>${bear.attemptCount}</td>
+        <td>${bear.catchCount}</td>
       </tr>
     `;
   })
