@@ -21,7 +21,9 @@ const addBear = () => {
         imageUrl: $('#bear-image').val(),
         id: utils.getId(),
         catchCount: 0,
-        attemptCount: 0
+        attemptCount: 0,
+        catchTimestamps: [],
+        attemptTimestamps: []
       });
       $('#bear-name').val('');
       $('#bear-image').val('');

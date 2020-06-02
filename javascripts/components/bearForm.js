@@ -7,6 +7,7 @@ const newBearClickEvent = (e) => {
   e.preventDefault();
   bearData.addBear();
   river.printBears();
+  utils.printToDom('#timestamps', ' ');
 }
 
 const printForm = () => {

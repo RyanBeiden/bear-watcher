@@ -11,7 +11,8 @@ const getId = () => {
 }
 
 const getDate = () => {
-  moment().format('MMMM Do YYYY, h:mm:ss a');
+  const timestamp = moment().format('MMMM Do YYYY, h:mm:ss a');
+  return timestamp;
 }
 
 export default { printToDom, getId, getDate };

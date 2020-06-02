@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Caveat:wght@400;700&family=Muli&display=swap');
 
 body {
   font-family: 'Muli', sans-serif;
@@ -119,8 +119,8 @@ header {
 }
 
 .card-title {
-  font-size: 2.5em;
-  font-family: 'Caveat', cursive;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 .line {
@@ -136,10 +136,10 @@ table {
 .catch-button,
 .attempt-button {
   border: none;
-  background-color: #FFFFFF;
+  background-color: #2962FF;
   padding: 5px 10px;
   margin: 0px 10px;
-  color: #2962FF;
+  color: #FFFFFF;
   font-size: 1em !important;
   border: 2px solid #2962FF;
   border-radius: .2em;
@@ -148,6 +148,26 @@ table {
 
 .catch-button:hover,
 .attempt-button:hover {
-  background-color: #2962FF;
+  background-color: #001A63;
   color: #FFFFFF;
+}
+
+.ts-bear {
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  border-radius: 3px;
+  padding: 0px 0px 20px 0px;
+  margin-bottom: 10px;
+}
+
+.ts-title {
+  color: #FFFFFF;
+  text-decoration: underline;
+  margin-top: 10px;;
+}
+
+.fish-total span {
+  font-size: 2em;
+  padding: 0px 10px 10px 10px;
+  font-family: 'Bevan', cursive;
 }
