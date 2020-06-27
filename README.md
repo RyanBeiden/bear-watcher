@@ -14,10 +14,14 @@ Tracking Attempts and Fish Catches:
 
 ![Bear Watcher Site Demo](./screenshots/catch-bear-watcher-site-demo.gif)
 
-## View Project
-- Clone the repository 👉🏼 `$ git clone https://github.com/RyanBeiden/bear-watcher.git`
+## Deployed Project
 
-- Run any http server `$ hs` or code editor to view project 👀
+View [HERE](https://rb-bear-watcher.web.app/) 👀
+
+## Clone the Repository
+- Clone it 👉🏼 `$ git clone https://github.com/RyanBeiden/bear-watcher.git`
+
+- Run any http server `$ hs` or view with a code editor
 
 ## Technologies Used
 [![JavaScript](https://img.shields.io/badge/-JavaScript-2c9fcc?style=flat-square)](#) [![ES6 Modules](https://img.shields.io/badge/-ES6%20Modules-2c9fcc?style=flat-square)](#) [![CSS](https://img.shields.io/badge/-CSS-2c9fcc?style=flat-square)](#)
