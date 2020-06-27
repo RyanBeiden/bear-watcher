@@ -6,13 +6,13 @@ This project is a basic form where you can add the name and image URL of a bear 
 
 Adding a new Bear:
 
-![Bear Watcher Site Demo](./assets/add-bear-watcher-site-demo.gif)
+![Bear Watcher Site Demo](./screenshots/add-bear-watcher-site-demo.gif)
 
 ---
 
 Tracking Attempts and Fish Catches:
 
-![Bear Watcher Site Demo](./assets/catch-bear-watcher-site-demo.gif)
+![Bear Watcher Site Demo](./screenshots/catch-bear-watcher-site-demo.gif)
 
 ## View Project
 - Clone the repository 👉🏼 `$ git clone https://github.com/RyanBeiden/bear-watcher.git`
