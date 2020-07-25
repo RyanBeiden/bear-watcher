@@ -16,7 +16,7 @@ Tracking Attempts and Fish Catches:
 
 ## Deployed Project
 
-View [HERE](https://rb-bear-watcher.web.app/) 👀
+https://rb-bear-watcher.web.app/
 
 ## Clone the Repository
 - Clone it 👉🏼 `$ git clone https://github.com/RyanBeiden/bear-watcher.git`
